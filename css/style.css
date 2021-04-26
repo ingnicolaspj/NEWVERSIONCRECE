@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+:root{
+    --color1:#d49e28;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    ),url(/img/alumnos1.jpg);
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+nav{
+    width: 100%;
+    height: 5.5rem;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container{
+    display: grid;
+    margin: auto;
+    width: 95%;
+    grid-template-columns: 0.4fr 1fr;
+    padding: 30px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight:700;
+    padding-bottom: 2px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-menu a:hover{
+    border-bottom: 3px solid var(--color1);
+    transition: 0.6s;
+}
+
+.nav-menu .item1{
+    list-style: none;
+    float: left;
+    padding: 10px 0;
+    margin-right: 17px;
+}
+.desple{
+    margin-top: 5px;
+    padding: 3px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.desple li{
+    list-style: none;
+    padding: 5px;
+}
+
+.nav-menu .desple{
+    display: none;
+    position: absolute;
+    min-width: 220px;
+}
+.nav-menu .item1:hover .desple{
+    display: block;
+    transition: 2s;
+}
+.textos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.welcome{
+    font-size: 3.5rem;
+    color: #ccc;
+    padding: 3px 25px;
+}
+.welcome > span{
+    color: var(--color1);
+}
+
+.textos h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.textos p{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.textos a{
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    border: 1px solid var(--color1);
+    transition: .5s;
+    border-radius: 0 40px 0 40px;
+}
+
+.textos a:hover{
+    border-radius: 40px 0 40px 0;
+    transition: .5s;
+    background-color: var(--color1);
+    color: #fff;
+}
+/* -------------Section One---------- */
+.section-resena{
+    width: 85%;
+    margin: 0 auto;
+}
+.contenedor{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.contenedor-sectionOne{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap:20px;
+    align-items: center;
+}
+.contenedor-sectionOne h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: 100;
+    border-bottom: 3px solid var(--color1);
+}
+
+.textos-sectionOne{
+    border: 2px solid #ccc;
+    text-align: justify;
+    padding: 20px;
+}
+.peopleOne{
+    width: 100%;
+}
+/* ----------Sectiion Two------------- */
+.contenedor-sectionTwo{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(206, 197, 197, 0.4);
+}
+.textos-sectionTwo h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 100;
+    border-bottom: 3px solid var(--color1);
+}
+
+.textos-sectionTwo p{
+    margin-bottom: 10px;
+}
+.textos-sectionTwo li{
+    list-style: none;
+    font-size: .8rem;
+    text-align: justify;
+    line-height: 1.2rem;
+    padding-top: 10px;
+}
+.fa-arrow-circle-right{
+    padding-right: 10px;
+    color: #d49e28;
+}
+
+.secetaryOne{
+    width: 100%;
+}
+
+/* ------------Section three---------- */
+.section-numbers{
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    background-image:linear-gradient(to bottom,
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    ),url(/img/escritorios.jpg);
+    background-position: unset;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.contenedor-sectionThree ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4.5rem;
+    color: #fff;
+    list-style: none;
+    padding: 15px;
+}
+.contenedor-sectionThree li{
+    text-align: center;
+}
+
+.contenedor-sectionThree ul li i{
+    display: block;
+    color: #fff;
+    border-bottom: 3px solid var(--color1);
+    padding: 0 0 26px;
+    margin: 0 0 8px;
+    font-size: 60px;
+    position: relative;
+}
+
+/* ----Section testimonial---- */
+
+.section-testimonial{
+    background: rgba(0,0,0,.75);
+    width: 100%;
+    height: 500px;
+}
+/* ----footer--- */
+footer{
+    background-color: var(--color1);
+    width: 100%;
+    height: 100px;
+}
